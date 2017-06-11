@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700|Yanone+Kaffeesatz:200,300,400);
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.template-splash h1, h2, h3 {
+	font-family: 'Yanone Kaffeesatz';
+	font-weight: 200;
+	text-align: center;
+}
+
+.template-splash h1 {
+	font-size: 5rem;
+}
+
+.template-splash h2 {
+	font-size: 3.5rem;
+}
+
+.template-splash h3 {
+	font-size: 2rem;
+}
+
+.template-splash p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 2.0rem;
+    font-size: 1.1rem;
+    font-family: Lato;
+    font-weight: 200;
+}
+
