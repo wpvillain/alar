@@ -8,14 +8,14 @@
   align-items: center;
 }
 
-.template-splash h1, h2, h3 {
+.template-splash h1, h2, h3, h4 {
 	font-family: 'Yanone Kaffeesatz';
 	font-weight: 200;
 	text-align: center;
 }
 
 .template-splash h1 {
-	font-size: 5rem;
+	font-size: 6rem;
 }
 
 .template-splash h2 {
@@ -23,7 +23,33 @@
 }
 
 .template-splash h3 {
-	font-size: 2rem;
+	font-size: 1.08rem;
+	text-transform: uppercase;
+}
+.template-splash h3 a {
+    color: #548392;
+    text-decoration: none;
+    margin: 0 1.1rem 0 0;
+}
+
+.template-splash .links {
+	text-align: center;
+}
+
+.template-splash .links a {
+	font-size: 1.08rem;
+	text-transform: uppercase;
+	color: #548392;
+	text-decoration: none;
+	font-family: 'Yanone Kaffeesatz';
+	font-weight: 200;
+	margin: 0 1.1rem 0 0;
+
+}
+.template-splash h4 {
+	font-size: 1.0rem;
+	word-spacing: 1.4rem;
+	text-transform: uppercase;
 }
 
 .template-splash p {
