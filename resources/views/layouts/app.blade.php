@@ -4,7 +4,7 @@
   <body @php(body_class())>
     @php(do_action('get_header'))
     {{-- @if(is_front_page())
-    @include('partials.header-frontpage')
+    @include('partials.header-slider')
     @else
     @include('partials.header')
     @endif --}}
