@@ -8,6 +8,15 @@
           <div class="content">
             <main class="main">
               @yield('content')
+                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                  <div class="container">
+                    <div id="navbarSupportedContent">
+                     @if (has_nav_menu('splash_navigation'))
+                     {!! wp_nav_menu(['theme_location' => 'splash_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
+                     @endif
+                     </div>
+                   </div>
+                </nav>
             </main>
             @if (App\display_sidebar())
               <aside class="sidebar">

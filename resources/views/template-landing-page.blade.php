@@ -1,3 +1,7 @@
+{{--
+  Template Name: Landin Page
+--}}
+
 @extends('layouts.app')
 
 @section('content')

@@ -41,7 +41,8 @@ add_action('after_setup_theme', function () {
      * @link https://developer.wordpress.org/reference/functions/register_nav_menus/
      */
     register_nav_menus([
-        'primary_navigation' => __('Primary Navigation', 'sage')
+        'primary_navigation' => __('Primary Navigation', 'sage'),
+        'splash_navigation' => __('Splash Navigation', 'sage')
     ]);
 
     /**
@@ -150,6 +151,8 @@ add_action('after_setup_theme', function () {
         return "<?= App\\asset_path({$asset}); ?>";
     });
 });
+
+add_theme_support('woocommerce');
 
 /**
  * Init config
