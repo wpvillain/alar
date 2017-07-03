@@ -12,7 +12,7 @@
                   <div class="container">
                     <div id="navbarSupportedContent">
                      @if (has_nav_menu('splash_navigation'))
-                     {!! wp_nav_menu(['theme_location' => 'splash_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
+                     {!! wp_nav_menu(['theme_location' => 'splash_navigation', 'walker' => new BootstrapNavMenuWalker(), 'menu_class' => 'navbar-nav nav pull-right']) !!}
                      @endif
                      </div>
                    </div>
