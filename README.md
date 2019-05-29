@@ -5,35 +5,26 @@
 
 Sage is a WordPress starter theme with a modern development workflow.
 
-**Sage 9 is in active development and is currently in beta. The `master` branch tracks Sage 9 development. If you want a stable version, use the [latest Sage 8 release](https://github.com/roots/sage/releases/latest).**
-
 ## Features
 
 * Sass for stylesheets
-* ES6 for JavaScript
+* Modern JavaScript
 * [Webpack](https://webpack.github.io/) for compiling assets, optimizing images, and concatenating and minifying files
 * [Browsersync](http://www.browsersync.io/) for synchronized browser testing
-* [Laravel's Blade](https://laravel.com/docs/5.3/blade) as a templating engine
-* CSS framework options:
-  * [Bootstrap 4](http://getbootstrap.com/)
-  * [Foundation](http://foundation.zurb.com/)
-  * None (blank slate)
-* Font Awesome (optional)
+* [Blade](https://laravel.com/docs/5.6/blade) as a templating engine
+* [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
+* CSS framework (optional): [Bootstrap 4](https://getbootstrap.com/), [Bulma](https://bulma.io/), [Foundation](https://foundation.zurb.com/), [Tachyons](http://tachyons.io/), [Tailwind](https://tailwindcss.com/)
 
 See a working example at [roots-example-project.com](https://roots-example-project.com/).
-
-### Recommended extensions
-
-* [Controller](https://github.com/soberwp/controller) — WordPress plugin to enable a basic controller when using Blade with Sage 9
 
 ## Requirements
 
 Make sure all dependencies have been installed before moving on:
 
 * [WordPress](https://wordpress.org/) >= 4.7
-* [PHP](http://php.net/manual/en/install.php) >= 5.6.4
+* [PHP](https://secure.php.net/manual/en/install.php) >= 7.1.3 (with [`php-mbstring`](https://secure.php.net/manual/en/book.mbstring.php) enabled)
 * [Composer](https://getcomposer.org/download/)
-* [Node.js](http://nodejs.org/) >= 6.9.x
+* [Node.js](http://nodejs.org/) >= 8.0.0
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
 ## Theme installation
@@ -42,22 +33,23 @@ Install Sage using Composer from your WordPress themes directory (replace `your-
 
 ```shell
 # @ app/themes/ or wp-content/themes/
+$ composer create-project roots/sage your-theme-name
+```
+
+To install the latest development version of Sage, add `dev-master` to the end of the command:
+
+```shell
 $ composer create-project roots/sage your-theme-name dev-master
 ```
 
-During theme installation you will have the options to:
-
-* Update theme headers (theme name, description, author, etc.)
-* Select a CSS framework (Bootstrap, Foundation, none)
-* Add Font Awesome
-* Configure Browsersync (path to theme, local development URL)
+During theme installation you will have options to update `style.css` theme headers, select a CSS framework, and configure Browsersync.
 
 ## Theme structure
 
 ```shell
 themes/your-theme-name/   # → Root of your Sage based theme
 ├── app/                  # → Theme PHP
-│   ├── lib/Sage/         # → Blade implementation, asset manifest
+│   ├── Controllers/      # → Controller files
 │   ├── admin.php         # → Theme customizer setup
 │   ├── filters.php       # → Theme filters
 │   ├── helpers.php       # → Helper functions
@@ -98,19 +90,24 @@ Edit `app/setup.php` to enable or disable theme features, setup navigation menus
 
 ### Build commands
 
-* `yarn run start` — Compile assets when file changes are made, start Browsersync session
-* `yarn run build` — Compile and optimize the files in your assets directory
-* `yarn run build:production` — Compile assets for production
+* `yarn start` — Compile assets when file changes are made, start Browsersync session
+* `yarn build` — Compile and optimize the files in your assets directory
+* `yarn build:production` — Compile assets for production
 
 ## Documentation
 
-Sage 8 documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
-
-Sage 9 documentation is currently in progress and can be viewed at [https://github.com/roots/docs/tree/sage-9/sage](https://github.com/roots/docs/tree/sage-9/sage).
+* [Sage documentation](https://roots.io/sage/docs/)
+* [Controller documentation](https://github.com/soberwp/controller#usage)
 
 ## Contributing
 
 Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
+
+## Sage sponsors
+
+Help support our open-source development efforts by [becoming a patron](https://www.patreon.com/rootsdev).
+
+<a href="https://kinsta.com/?kaid=OFDHAJIXUDIV"><img src="https://cdn.roots.io/app/uploads/kinsta.svg" alt="Kinsta" width="200" height="150"></a> <a href="https://k-m.com/"><img src="https://cdn.roots.io/app/uploads/km-digital.svg" alt="KM Digital" width="200" height="150"></a> <a href="https://www.itineris.co.uk/"><img src="https://cdn.roots.io/app/uploads/itineris.svg" alt="itineris" width="200" height="150"></a>
 
 ## Community
 
@@ -121,4 +118,3 @@ Keep track of development and community news.
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
 * Listen to the [Roots Radio podcast](https://roots.io/podcast/)
-# alar

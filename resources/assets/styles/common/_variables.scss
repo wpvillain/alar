@@ -1,4 +1,10 @@
-// Colors
-$brand-primary:         #27ae60;
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
 
-$fa-font-path:          '~font-awesome/fonts';
+$theme-colors: (
+  primary: #525ddc
+);
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
