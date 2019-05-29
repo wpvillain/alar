@@ -1,9 +1,95 @@
+### 9.0.9: February 13th, 2019
+* Update to Bootstrap 4.3.1 ([#2153](https://github.com/roots/sage/pull/2153))
+
+### 9.0.8: February 11th, 2019
+* Update to Bootstrap 4.3.0 ([#2152](https://github.com/roots/sage/pull/2152))
+* Filter template hierarchy for embed templates ([#2145](https://github.com/roots/sage/pull/2145))
+* Decrease optipng level ([#2143](https://github.com/roots/sage/pull/2143))
+* Unescape post titles ([#2141](https://github.com/roots/sage/pull/2141))
+
+### 9.0.7: December 28th, 2018
+* Update sage-installer which now allows to opt-in for sending framework selection data ([#2137](https://github.com/roots/sage/pull/2137))
+
+### 9.0.6: December 21st, 2018
+* Update to Bootstrap 4.2.1 ([#2136](https://github.com/roots/sage/pull/2136))
+* Do not ignore vendors for plugins ([#2132](https://github.com/roots/sage/pull/2132))
+* Fix stylelint and eslint validation errors ([#2131](https://github.com/roots/sage/pull/2131))
+* Hook run sequence fix ([#2123](https://github.com/roots/sage/pull/2123))
+* Dispatch event when firing routes ([#2080](https://github.com/roots/sage/pull/2080))
+* Normalize and enforce single quotes ([#2076](https://github.com/roots/sage/pull/2076))
+
+### 9.0.5: September 17th, 2018
+* Workaround for Bootstrap incompatibility with webpack. Fixes #2017 ([e72b490](https://github.com/roots/sage/commit/e72b4906264551dc00cd0890de74ae2bce0d77c8))
+
+### 9.0.4: September 7th, 2018
+* Force `illuminate/support` to `5.6.*` ([#2112](https://github.com/roots/sage/pull/2112))
+
+### 9.0.3: September 7th, 2018
+* Revert "Add searchform partial and function to replace default WordPress functionality" ([#2110](https://github.com/roots/sage/pull/2110))
+* Unescape get_language_attributes() ([#2108](https://github.com/roots/sage/pull/2108))
+* Add data from controller to comments template ([#2100](https://github.com/roots/sage/pull/2100))
+
+### 9.0.2: August 21st, 2018
+* Update to Bootstrap 4.1.3 ([#2097](https://github.com/roots/sage/pull/2097))
+* Comments template fix ([#2095](https://github.com/roots/sage/pull/2095))
+* UglifyJs: Change the ecma option from 8 to 5 ([#2092](https://github.com/roots/sage/pull/2092))
+* Add searchform partial and function to replace default WordPress functionality ([#2090](https://github.com/roots/sage/pull/2090))
+* Change language_attributes() to get_language_attributes() ([#2089](https://github.com/roots/sage/pull/2089))
+* Fix missing comment-reply JS ([#2085](https://github.com/roots/sage/pull/2085))
+* Use better merge method for Webpack Preset config ([#2084](https://github.com/roots/sage/pull/2084))
+* Add support for preset specific Webpack config ([#2083](https://github.com/roots/sage/pull/2083))
+* Enable Sass comments and run prefixing before minification ([#2078](https://github.com/roots/sage/pull/2078))
+* Set removeViewBox to 'false' in webpack's optimization settings ([#2075](https://github.com/roots/sage/pull/2075))
+* Add uglifyjs plugin ([#2070](https://github.com/roots/sage/pull/2070))
+* Make template() compatible with wp admin ([#2068](https://github.com/roots/sage/pull/2068))
+* Upgrade to Controller 2.1.0 ([#2025](https://github.com/roots/sage/pull/2025))
+
+### 9.0.1: April 30th, 2018
+* Update to Bootstrap 4.1.1 ([#2065](https://github.com/roots/sage/pull/2065))
+* Auto-detect `proxyUrl` scheme ([#2062](https://github.com/roots/sage/pull/2062))
+* Bump to Laravel 5.6 ([#2061](https://github.com/roots/sage/pull/2061))
+* Update to Bootstrap 4.1.0 ([#2056](https://github.com/roots/sage/pull/2056))
+* Change inline `@php` directive to full form ([#2042](https://github.com/roots/sage/pull/2042))
+* PHP 7.1.3+ is now required ([#2037](https://github.com/roots/sage/pull/2037))
+
+### 9.0.0: February 7th, 2018
+* Update to Bootstrap 4 ([#2015](https://github.com/roots/sage/pull/2015))
+* Allow `no-console` development ([#2008](https://github.com/roots/sage/pull/2008))
+* Move variables and Bootstrap lines to autoload ([#1993](https://github.com/roots/sage/pull/1993))
+* Update controller examples ([#1986](https://github.com/roots/sage/pull/1986))
+* Update to Bootstrap 4 Beta 2 ([#1981](https://github.com/roots/sage/pull/1981))
+* Add friendly-errors-webpack-plugin ([#1961](https://github.com/roots/sage/pull/1961))
+* Update to Controller 9.0.0-beta.4 ([#1959](https://github.com/roots/sage/pull/1959))
+* Change default Controller path to `app/controllers/` ([#1954](https://github.com/roots/sage/pull/1954))
+* Fix `lint:styles` task with cmd.exe ([#1955](https://github.com/roots/sage/pull/1955))
+* Ensure template filenames are without path and extension ([#1941](https://github.com/roots/sage/pull/1941))
+* Moved `title()` helper to `app.php` controller ([#1912](https://github.com/roots/sage/pull/1912))
+* Fix `lint:styles` script not matching files in deep subdirectories ([#1951](https://github.com/roots/sage/pull/1951))
+* Fix for plugins that don't enqueue their scripts properly ([#1949](https://github.com/roots/sage/pull/1949))
+* Fix Popper for Bootstrap 4 ([#1946](https://github.com/roots/sage/pull/1946))
+
+### 9.0.0-beta.4: August 11th, 2017
+* Update to Bootstrap 4.0.0-beta ([#1943](https://github.com/roots/sage/pull/1943))
+* PHP 7+ is now required ([#1935](https://github.com/roots/sage/pull/1935))
+* Update dependencies, support `config-local.json`, implement autoload system for styles/scripts, use `roots/sage-installer`, use `roots/sage-lib` ([#1919](https://github.com/roots/sage/pull/1919))
+* Add soberwp/controller ([#1903](https://github.com/roots/sage/pull/1903))
+* Change syntax of template call to match other files in views ([#1908](https://github.com/roots/sage/pull/1908))
+* Add Tachyons as a CSS framework option ([#1867](https://github.com/roots/sage/pull/1867))
+* Remove post format reference in template call ([#1904](https://github.com/roots/sage/pull/1904))
+* Update inline documentation to reflect correct theme file locations ([#1890](https://github.com/roots/sage/pull/1890))
+* Optimize CSS Assets safe = true ([#1901](https://github.com/roots/sage/pull/1901))
+* Update Autoprefixer and standardize browserlist location ([#1899](https://github.com/roots/sage/pull/1899))
+* Do not redirect for WP-CLI ([#1891](https://github.com/roots/sage/pull/1891))
+* Illuminate: container make with parameters ([#1888](https://github.com/roots/sage/pull/1888))
+* Add Stylelint for linting stylesheets ([#1885](https://github.com/roots/sage/pull/1885))
+
 ### 9.0.0-beta.3: April 21st, 2017
 * Move required theme files to `sage/resources` ([#1877](https://github.com/roots/sage/pull/1877))
 * Move `src/` to `app/` ([#1868](https://github.com/roots/sage/pull/1868))
 * Move `templates/` to `resources/views/`, move `assets/` to `resources/assets/`, rename `base.blade.php` to `app.blade.php` ([#1864](https://github.com/roots/sage/pull/1864))
 * Add option to configure build settings ([#1822](https://github.com/roots/sage/pull/1822))
 * Add support for HTML injection ([#1817](https://github.com/roots/sage/pull/1817))
+* Add Tachyons as a CSS framework option ([#1867](https://github.com/roots/sage/pull/1867))
 
 ### 9.0.0-beta.2: January 19th, 2017
 * Fix Browersync ([#1815](https://github.com/roots/sage/pull/1815))
