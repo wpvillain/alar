@@ -41,7 +41,7 @@
     "bs-html-injector": "^3.0.3",
     "buble-loader": "^0.4.1",
     "clean-webpack-plugin": "^0.1.16",
-    "copy-globs-webpack-plugin": "^0.2.0",
+    "copy-globs-webpack-plugin": "^0.3.0",
     "css-loader": "^0.28.0",
     "cssnano": "^3.10.0",
     "eslint": "^3.19.0",
