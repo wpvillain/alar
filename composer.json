@@ -43,7 +43,7 @@
   },
   "extra": {
     "installer-paths": {
-      "vendor/cmb2/": ["cmb2/cmb2"]
+      "cmb2/": ["cmb2/cmb2"]
     }
   },
   "require-dev": {
