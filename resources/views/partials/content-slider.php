@@ -18,7 +18,7 @@
         <?php while ( $the_slides_query->have_posts() ) : $the_slides_query->the_post(); ?>
           <div class="carousel-item <?php if( $the_slides_query->current_post == 0 ) echo 'active' ?>">
             <?php if (has_post_thumbnail()): ?>
-                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full', 'title' => 'Feature image']); //the_post_thumbnail( 'full' ); ?>
+                <?php the_post_thumbnail('post-thumbnail', ['class' => 'img-responsive responsive--full w-100 d-block', 'title' => 'Feature image']); //the_post_thumbnail( 'full' ); ?>
                 <?php endif; ?>
                   <!-- Static Header -->
                     <div class="header-text carousel-caption hidden-xs">
