@@ -92,7 +92,7 @@ add_filter('comments_template', function ($comments_template) {
 
 add_action( 'init', function() {
 
-	register_extended_post_type( 'story', array(
+	register_extended_post_type( 'slider', array(
 
 		# Add the post type to the site's main RSS feed:
 		'show_in_feed' => true,
@@ -118,19 +118,13 @@ add_action( 'init', function() {
 			)
 		),
 
-		# Add a dropdown filter to the admin screen:
-		'admin_filters' => array(
-			'genre' => array(
-				'taxonomy' => 'genre'
-			)
-		)
 
 	), array(
 
 		# Override the base names used for labels:
-		'singular' => 'Story',
-		'plural'   => 'Stories',
-		'slug'     => 'stories'
+		'singular' => 'Slide',
+		'plural'   => 'Slides',
+		'slug'     => 'slides'
 
 	) );
 
