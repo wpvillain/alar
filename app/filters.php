@@ -113,10 +113,9 @@ add_action( 'init', function() {
 				'meta_key'    => 'published_date',
 				'date_format' => 'd/m/Y'
 			),
-			'genre' => array(
-				'taxonomy' => 'genre'
-			)
-		),
+        ),
+
+        'publicly_queryable' => false,
 
 
 	), array(
