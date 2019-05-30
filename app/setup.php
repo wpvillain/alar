@@ -131,6 +131,6 @@ add_action('after_setup_theme', function () {
     });
 });
 
-require_once( __DIR__ . '/../cmb2/init.php' );
-require_once( __DIR__ . '/../cmb2/example-functions.php');
+require_once( __DIR__ . '/../vendor/cmb2/init.php' );
+require_once( __DIR__ . '/../vendor/cmb2/example-functions.php');
 

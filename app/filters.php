@@ -89,3 +89,49 @@ add_filter('comments_template', function ($comments_template) {
 
     return $comments_template;
 }, 100);
+
+add_action( 'init', function() {
+
+	register_extended_post_type( 'story', array(
+
+		# Add the post type to the site's main RSS feed:
+		'show_in_feed' => true,
+
+		# Show all posts on the post type archive:
+		'archive' => array(
+			'nopaging' => true
+		),
+
+		# Add some custom columns to the admin screen:
+		'admin_cols' => array(
+			'featured_image' => array(
+				'title'          => 'Illustration',
+				'featured_image' => 'thumbnail'
+			),
+			'published' => array(
+				'title'       => 'Published',
+				'meta_key'    => 'published_date',
+				'date_format' => 'd/m/Y'
+			),
+			'genre' => array(
+				'taxonomy' => 'genre'
+			)
+		),
+
+		# Add a dropdown filter to the admin screen:
+		'admin_filters' => array(
+			'genre' => array(
+				'taxonomy' => 'genre'
+			)
+		)
+
+	), array(
+
+		# Override the base names used for labels:
+		'singular' => 'Story',
+		'plural'   => 'Stories',
+		'slug'     => 'stories'
+
+	) );
+
+} );
