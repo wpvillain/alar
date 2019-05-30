@@ -130,3 +130,7 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+require_once( __DIR__ . '/../cmb2/init.php' );
+require_once( __DIR__ . '/../cmb2/example-functions.php');
+
