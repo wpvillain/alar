@@ -14,4 +14,5 @@
     </nav>
   </div>
   @include('partials.content-banner')
+  @include('partials.content-about-block')
 </header>
