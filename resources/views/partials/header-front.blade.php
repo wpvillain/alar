@@ -15,4 +15,6 @@
   </div>
   @include('partials.content-banner')
   @include('partials.content-about-block')
+  @include('partials.content-banner')
+  @include('partials.content-jumbotron')
 </header>

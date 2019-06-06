@@ -7,7 +7,7 @@
 }
 
 .masthead {
-  height: 100vh;
+  height: 70vh;
   min-height: 500px;
   background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
   background-size: cover;
@@ -16,10 +16,30 @@
 }
 
 .about-masthead {
-  height: 100vh;
+  height: 60vh;
   min-height: 500px;
   background-color: #ebeced;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.highlight-word {
+  position: relative;
+  z-index: 0;
+
+  /* prevent the highlight from breaking since it is horizontal   */
+  white-space: nowrap;
+}
+
+.highlight-word::before {
+  content: "";
+  background: url("https://cdn2.hubspot.net/hubfs/1951809/text-highlight.png?t=1542708765973") no-repeat center center;
+  background-size: 100% auto;
+  width: 108%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-3%, 0);
 }
