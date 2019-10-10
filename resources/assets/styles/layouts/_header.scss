@@ -9,7 +9,7 @@
 .masthead {
   height: 70vh;
   min-height: 500px;
-  background-image: url("https://source.unsplash.com/BtbjCFUvBXs/1920x1080");
+  background-image: url("../images/photo-1528731708534-816fe59f90cb.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,6 +19,15 @@
   height: 60vh;
   min-height: 500px;
   background-color: #ebeced;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.masthead-single {
+  height: 70vh;
+  min-height: 500px;
+  background-image: url("../images/augustine-wong-unsplash-v2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
