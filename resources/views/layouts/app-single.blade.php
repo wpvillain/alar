@@ -6,17 +6,17 @@
     @php do_action('get_header') @endphp
     @include('partials.header-single')
     <div class="wrap container" role="document">
-      <div class="content">
-        <main class="main">
-          @yield('content')
-        </main>
-        @if (App\display_sidebar())
-          <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside>
-        @endif
+        <div class="row">
+          <main class="main col-sm">
+            @yield('content')
+          </main>
+          @if (App\display_sidebar())
+            <aside class="sidebar col-sm">
+              @include('partials.sidebar')
+            </aside>
+          @endif
+        </div>
       </div>
-    </div>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
