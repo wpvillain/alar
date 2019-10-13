@@ -141,3 +141,12 @@ add_filter('sage/display_sidebar', function ($display) {
 
     return $display;
 });
+
+// inspired by https://wordpress.org/support/?p=9933297"
+
+add_filter( 'the_title', function( $title, $id ) {
+	if ( is_single() && in_the_loop() ) {
+		$title = '';
+	}
+	return $title;
+},10, 2);
