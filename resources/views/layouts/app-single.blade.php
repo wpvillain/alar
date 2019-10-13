@@ -7,11 +7,11 @@
     @include('partials.header-single')
     <div class="wrap container" role="document">
         <div class="row">
-          <main class="main col-sm">
+          <main class="main col-lg-8 col-md-7">
             @yield('content')
           </main>
           @if (App\display_sidebar())
-            <aside class="sidebar col-sm">
+            <aside class="sidebar col-lg-4 col-md-5">
               @include('partials.sidebar')
             </aside>
           @endif
