@@ -13,8 +13,8 @@
       </div>
     </nav>
   </div>
-  @include('partials.content-banner')
-  @include('partials.content-about-block')
-  @include('partials.content-banner-services')
+  @include('partials.home.content-hero')
+  @include('partials.home.content-about-block')
+  @include('partials.home.content-services-block')
   @include('partials.content-jumbotron')
 </header>
