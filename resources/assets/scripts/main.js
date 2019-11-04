@@ -4,6 +4,17 @@ import 'jquery';
 // Import everything from autoload
 import './autoload/**/*'
 
+// import then needed Font Awesome functionality
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+// import the Facebook and Twitter icons
+import { faTachometerAlt } from '@fortawesome/free-solid-svg-icons';
+
+// add the imported icons to the library
+library.add( faTachometerAlt );
+
+// tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
+dom.watch();
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
