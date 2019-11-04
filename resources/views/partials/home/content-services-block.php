@@ -6,6 +6,18 @@
         <h1 class="font-weight-light"><?php the_field('services_header'); ?></h1>
         <p class="lead"><?php the_field('services_intro'); ?></p>
       </div>
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
+      </div>
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+          Aenean massa. Cum sociis natoque penatibus et</p>
+      </div>
+      <div class="col-lg-4">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+          Aenean massa. Cum sociis natoque penatibus et</p>
+      </div>
     </div>
   </div>
 </header>
