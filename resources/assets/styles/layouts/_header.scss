@@ -41,6 +41,12 @@ a.brand {
   background-repeat: no-repeat;
 }
 
+@include media-breakpoint-down(sm) {
+  .services-masthead {
+    height: auto;
+  }
+}
+
 .masthead-single {
   height: 30vh;
   min-height: 400px;
