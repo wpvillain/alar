@@ -32,6 +32,12 @@ a.brand {
   background-repeat: no-repeat;
 }
 
+@include media-breakpoint-down(sm) {
+  .about-masthead {
+    height: auto;
+  }
+}
+
 .services-masthead {
   height: 60vh;
   min-height: 500px;
