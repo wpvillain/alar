@@ -36,8 +36,10 @@
         </div>
         <div class="col-lg-4">
           <h4 class="font-weight-light">Unused CSS Cleanup</h4>
-            <p>Many themes add loads of styling with CSSS only to use a tiny bit of it. We remove or prune 
-              unused CSS using various tools/p>
+            <p>Many themes add loads of styling with CSSS only to use a tiny bit of it. Sometimes you 
+              only need a small part of a CSS Framework, Not the whole library. We remove or prune 
+              unused CSS using various tools.
+            </p>
           </div>
           <div class="col-lg-4">
             <h4 class="font-weight-light">Database Cleanup</h4>
