@@ -47,7 +47,7 @@ a.brand {
   background-repeat: no-repeat;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(sml) {
   .services-masthead {
     height: auto;
   }
