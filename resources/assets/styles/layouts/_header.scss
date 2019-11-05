@@ -6,6 +6,14 @@
   @extend .nav-link;
 }
 
+a.brand {
+  text-decoration: none;
+}
+
+.row.h-100.align-items-center {
+  padding-left: 1em;
+}
+
 .masthead {
   height: 70vh;
   min-height: 500px;

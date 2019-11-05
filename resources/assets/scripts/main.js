@@ -15,6 +15,22 @@ library.add( faTachometerAlt );
 // tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup
 dom.watch();
 
+// Load some Google Fonts asynchrously 
+// Typekit Web Font Loader https://github.com/typekit/webfontloader
+// https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js loads latest 1.x version
+
+window.WebFontConfig = {
+  google: { families: [ 'Raleway:100,100i,300,300i,400,400i,500,500i,700,700i' ] },
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';
