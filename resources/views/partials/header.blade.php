@@ -15,4 +15,5 @@
       </div>
     </nav>
   </div>
+@include('partials.content-page-banner')
 </header>
