@@ -1,0 +1,73 @@
+/*
+** Contact Form 7 basics
+**
+**/
+
+/* Form width  and border */
+
+.wpcf7 {
+  text-align: left;
+  width: 90%;
+  padding: 20px 25px !important;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-position: center;
+  background-size: cover;
+}
+
+/* Input Field widths */
+
+.wpcf7-text,
+.wpcf7-textarea {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  color: #777;
+}
+
+.wpcf7-text {
+  height: 50px;
+  padding-left: 10px;
+}
+
+/* Input Field borders */
+
+/* Input Field Text color */
+
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
+  border-color: #8f8f8f;
+}
+
+/* Label Font */
+
+.wpcf7-form p {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+/* Submit button Font */
+
+.wpcf7-submit {
+  width: 86%;
+  font-size: 15px !important;
+  background-color: #1d2731 !important;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  padding: 20px;
+}
+
+/* Submit button Hover */
+
+.wpcf7-submit:hover {
+  border-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #000 !important;
+}
+
+/* Response messages - Error & Success */
+
+.wpcf7-response-output {
+  margin-bottom: 30px !important;
+}
