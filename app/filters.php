@@ -134,7 +134,7 @@ add_filter('sage/display_sidebar', function ($display) {
 
     isset($display) || $display = in_array(true, [
       // The sidebar will be displayed if any of the following return true
-      is_single(),
+    //   is_single(),
       is_404(),
     //   is_page_template('template-custom.php')
     ]);

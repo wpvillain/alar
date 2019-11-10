@@ -15,5 +15,15 @@
       </div>
     </nav>
   </div>
-@include('partials.content-page-banner')
+  @php do_action('get_header') @endphp
+    @if(is_front_page())
+      @include('partials.home.content-hero')
+      @include('partials.home.content-about-block')
+      @include('partials.home.content-services-block')
+      @include('partials.home.content-jumbotron')
+    @elseif (is_single())
+      @include('partials.content-banner-single')
+    @else
+    @include('partials.content-banner-page')
+    @endif
 </header>
