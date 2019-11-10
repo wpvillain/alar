@@ -9,7 +9,7 @@
     {!! get_search_form(false) !!}
   @endif
   @include('partials.page-header')
-    <div class="row h-100 align-items-center">
+    <div class="row h-100 align-items-center m-0">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
           <p class="text-center">
