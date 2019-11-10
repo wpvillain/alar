@@ -19,5 +19,5 @@
   @include('partials.home.content-hero')
   @include('partials.home.content-about-block')
   @include('partials.home.content-services-block')
-  @include('partials.content-jumbotron')
+  @include('partials.home.content-jumbotron')
 </header>
