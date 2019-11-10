@@ -23,6 +23,8 @@
       @include('partials.home.content-jumbotron')
     @elseif (is_single())
       @include('partials.content-banner-single')
+    @elseif (is_404())
+      {{-- @include('') --}}
     @else
     @include('partials.content-banner-page')
     @endif
