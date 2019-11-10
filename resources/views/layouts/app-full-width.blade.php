@@ -3,7 +3,7 @@
   @include('partials.head')
   <body @php body_class() @endphp>
     @include('partials.header')
-    <div class="wrap container-fluid p-0" role="document">
+    <div class="wrap container-fluid p-0 m-0" role="document">
       <div class="content">
         <main class="main">
           @yield('content')

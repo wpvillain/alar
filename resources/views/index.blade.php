@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app-full-width')
 
 @section('content')
 
@@ -8,10 +8,17 @@
     </div>
     {!! get_search_form(false) !!}
   @endif
-
-  @while (have_posts()) @php the_post() @endphp
-    @include('partials.content-'.get_post_type())
-  @endwhile
-
-  {!! get_the_posts_navigation() !!}
+  @include('partials.page-header')
+    <div class="row h-100 align-items-center">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <p class="text-center">
+              @while (have_posts()) @php the_post() @endphp
+              @include('partials.content-'.get_post_type())
+              @endwhile
+              {!! get_the_posts_navigation() !!}
+          </p>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
 @endsection

@@ -16,13 +16,4 @@
     </nav>
   </div>
   @php do_action('get_header') @endphp
-    @if(is_front_page())
-      @include('partials.home.content-hero')
-    @elseif (is_single())
-      @include('partials.content-banner-single')
-    @elseif (is_404())
-      {{-- @include('') --}}
-    @else
-    @include('partials.content-banner-page')
-    @endif
 </header>
