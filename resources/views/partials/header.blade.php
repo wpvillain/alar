@@ -18,9 +18,6 @@
   @php do_action('get_header') @endphp
     @if(is_front_page())
       @include('partials.home.content-hero')
-      @include('partials.home.content-about-block')
-      @include('partials.home.content-services-block')
-      @include('partials.home.content-jumbotron')
     @elseif (is_single())
       @include('partials.content-banner-single')
     @elseif (is_404())
