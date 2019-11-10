@@ -69,7 +69,7 @@
     
     <div class="row">
       <div class="col-lg-8">
-          <h1 class="display-4">The fast & thorough way to <span class="highlight-word">speed up WordPress</span></h1>
+          <h2 class="display-5 font-weight-light">The fast & thorough way to <span class="highlight-word">speed up WordPress</span></h2>
   <p class="lead">Optimizin will speed optimize your WordPress site and improve SEO to boot</p>
         <span class="text-center d-inline-block">
           <a class="btn btn-primary btn-lg w-100" href="contact" role="button">Free Site Audit</a>
