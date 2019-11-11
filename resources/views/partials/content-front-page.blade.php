@@ -13,26 +13,27 @@
 </div>
 
 <div class="services-masthead">
-<!-- Full Page Image Header with Vertically Centered Content -->
-  <div class="container h-100">
-    <div class="row h-100 align-items-center">
-      <div class="col-12 text-center">
-        <h3 class="font-weight-light pt-4"><?php the_field('services_header'); ?></h3>
-        <p class="lead">@php the_field('services_intro') @endphp</p>
+  <!-- Full Page Image Header with Vertically Centered Content -->
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <h3 class="font-weight-light pt-4"><?php the_field('services_header'); ?></h3>
+          <p class="lead">@php the_field('services_intro') @endphp</p>
+        </div>
+        @if ($services_blocks)   
+          @foreach ($services_blocks as $item)
+            <div class="col-lg-4">
+              @if ($item->service_title)
+              <h4 class="font-weight-light">{{ $item->service_title }}</h4>
+              @endif
+              @if ($item->service_text)
+              <p>{!! $item->service_text !!}</p>
+              @endif
+            </div>
+          @endforeach
+        @endif
       </div>
-      
-      @if($services_block)
-      {{-- // loop through the rows of data --}}
-
-        @foreach($services_block as $r)
-          <div class="col-lg-4">
-            <h4 class="font-weight-light">{!! $r['service_title'] !!}</h4>
-            <p>{!! $r['service_text'] !!}</p> 
-          </div>
-        @endforeach
-      @endif
     </div>
-  </div>
 </div>
 <!-- Design inspired from https://www.hotjar.com/ -->
 <div class="jumbotron">

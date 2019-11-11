@@ -44,8 +44,4 @@ class App extends Controller
         );
         return $args;
     }
-
-    public function services_block() {
-        return get_field('services_blocks');
-      }
 }
