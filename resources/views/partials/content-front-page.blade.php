@@ -51,22 +51,31 @@
     </div>
 </div>
 <!-- Design inspired from https://www.hotjar.com/ -->
-<div class="jumbotron">
+<div class="jumbotron mb-0">
   <div class="container text-center text-lg-left">
-    
-    <div class="row">
-      <div class="col-lg-8">
-          <h2 class="display-5 font-weight-light">The fast & thorough way to <span class="highlight-word">speed up WordPress</span></h2>
-  <p class="lead">Optimizin will speed optimize your WordPress site and improve SEO to boot</p>
-        <span class="text-center d-inline-block">
-          <a class="btn btn-primary btn-lg w-100" href="contact" role="button">Free Site Audit</a>
-        {{-- <p class="text-muted">No credit card required</p> --}}
-        </span>
-        
-      </div>
-      <div class="col-lg-4 align-items-center d-flex">
-        <img src="@asset('images/fast-loading.svg')" alt="" class="img-fluid">
+      <div class="row">
+        <div class="col-lg-8">
+            <h2 class="display-5 font-weight-light">The fast & thorough way to <span class="highlight-word">speed up WordPress</span></h2>
+            <p class="lead">Optimizin will speed optimize your WordPress site and improve SEO to boot</p>
+            <span class="text-center d-inline-block">
+            <a class="btn btn-primary btn-lg w-100" href="contact" role="button">Free Site Audit</a>
+            {{-- <p class="text-muted">No credit card required</p> --}}
+            </span>
+        </div>
+        <div class="col-lg-4 align-items-center d-flex">
+          <img src="@asset('images/fast-loading.svg')" alt="" class="img-fluid">
       </div>
     </div>
+  </div>
+</div>
+<div class="pricing-masthead pb-5 mb-4">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center pt-5">
+      <div class="col-lg-2 text-center"></div>
+      <div class="col-lg-8 text-center">
+        @php the_content() @endphp
+      </div>
+      <div class="col-lg-2 text-center"></div>
     </div>
+  </div>
 </div>

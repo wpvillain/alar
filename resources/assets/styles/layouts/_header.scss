@@ -38,7 +38,8 @@ a.brand {
   }
 }
 
-.services-masthead {
+.services-masthead,
+.pricing-masthead {
   height: 60vh;
   min-height: 500px;
   background-color: #e1e2da;
@@ -48,7 +49,8 @@ a.brand {
 }
 
 @include media-breakpoint-down(sml) {
-  .services-masthead {
+  .services-masthead,
+  .pricing-masthead {
     height: auto;
   }
 }
