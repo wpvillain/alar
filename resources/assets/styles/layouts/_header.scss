@@ -24,15 +24,15 @@ a.brand {
 }
 
 .about-masthead {
-  height: 60vh;
-  min-height: 500px;
+  height: 43vh;
+  min-height: 350px;
   background-color: #ebeced;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(sml) {
   .about-masthead {
     height: auto;
   }

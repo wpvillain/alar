@@ -2,12 +2,27 @@
 <div class="about-masthead">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
+      @if ($why_header)
       <div class="col-lg-2"></div>
-      <div class="col-lg-8">
-        <h3 class="font-weight-light align-self-center text-center">About</h3>
-        <p class="text-center">@php the_field('about_block') @endphp</p>
+      <div class="col-lg-">
+          <h3 class="font-weight-light pt-4">
+            {{ $why_header }}
+          </h3>
       </div>
       <div class="col-lg-2"></div>
+      @endif
+      @if ($why_block)
+        @foreach ($why_block as $item)
+        <div class="col-lg-4">
+          @if ($item->why_title)
+          <h4 class="font-weight-light pt-4"><i class="{{ $item->why_icon }} pr-2"></i>{{ $item->why_title }}</h4>
+          @endif
+          @if ($item->why_text)
+            {!! $item->why_text !!}
+          @endif
+        </div>
+        @endforeach
+      @endif      
     </div>
   </div>
 </div>
