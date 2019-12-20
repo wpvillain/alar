@@ -20,7 +20,7 @@ dom.watch();
 // https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js loads latest 1.x version
 
 window.WebFontConfig = {
-  google: { families: [ 'Raleway:100,100i,300,300i,400,400i,500,500i,700,700i' ] },
+  google: { families: [ 'Raleway:100,100i,300,300i,400,400i,500,500i,700,700i&display=swap' ] },
 };
 (function() {
   var wf = document.createElement('script');
