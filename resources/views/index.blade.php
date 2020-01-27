@@ -10,8 +10,8 @@
   @endif
   @include('partials.page-header')
     <div class="row h-100 align-items-center m-0">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
           <p class="text-center">
               @while (have_posts()) @php the_post() @endphp
               @include('partials.content-'.get_post_type())
@@ -19,6 +19,6 @@
               {!! get_the_posts_navigation() !!}
           </p>
         </div>
-        <div class="col-lg-2"></div>
+        <div class="col-lg-3"></div>
     </div>
 @endsection
