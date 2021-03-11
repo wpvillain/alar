@@ -1,0 +1,284 @@
+[
+    {
+        "key": "group_5db68a9807c29",
+        "title": "Optimzin Home",
+        "fields": [
+            {
+                "key": "field_5db68aeee8be3",
+                "label": "Hero Header",
+                "name": "hero_header",
+                "type": "text",
+                "instructions": "Add the Header 2 here",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Optimizin",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5db68d2a7806b",
+                "label": "Hero Sub Header",
+                "name": "hero_sub_header",
+                "type": "text",
+                "instructions": "Add Hero sub header or tagline",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Optimization taken to a whole new level",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dbf9afbae0a6",
+                "label": "Hero Sub Sub",
+                "name": "hero_sub_sub_header",
+                "type": "text",
+                "instructions": "Add Hero Sub Sub text here",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dca209724620",
+                "label": "Why Header",
+                "name": "why_header",
+                "type": "text",
+                "instructions": "Add the why header here",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5db6c0fde59ab",
+                "label": "Why Block",
+                "name": "why_block",
+                "type": "repeater",
+                "instructions": "Add why block",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5dca2af6ee485",
+                        "label": "Why Icon",
+                        "name": "why_icon",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5dca1e2759539",
+                        "label": "Why Title",
+                        "name": "why_title",
+                        "type": "text",
+                        "instructions": "Add your title",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5dca1e3b5953a",
+                        "label": "Why Text",
+                        "name": "why_text",
+                        "type": "wysiwyg",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "tabs": "all",
+                        "toolbar": "full",
+                        "media_upload": 1,
+                        "delay": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_5db6923f4fdb9",
+                "label": "Services Header",
+                "name": "services_header",
+                "type": "text",
+                "instructions": "Add Services",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Our Services",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5db6926c9ee6d",
+                "label": "Services Intro",
+                "name": "services_intro",
+                "type": "text",
+                "instructions": "Services Introduction",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Optimizin Services are the following",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_5dc8dd6758162",
+                "label": "Services Blocks",
+                "name": "services_blocks",
+                "type": "flexible_content",
+                "instructions": "Add a Service",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layouts": {
+                    "layout_5dc8dd7499a98": {
+                        "key": "layout_5dc8dd7499a98",
+                        "name": "service_block",
+                        "label": "Service Block",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5dc8de3e58163",
+                                "label": "Service Title",
+                                "name": "service_title",
+                                "type": "text",
+                                "instructions": "Add service title here",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Service One",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_5dc8de7758164",
+                                "label": "Service Text",
+                                "name": "service_text",
+                                "type": "wysiwyg",
+                                "instructions": "Add the service text here",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "tabs": "all",
+                                "toolbar": "full",
+                                "media_upload": 1,
+                                "delay": 0
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    }
+                },
+                "button_label": "Add Row",
+                "min": "",
+                "max": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page",
+                    "operator": "==",
+                    "value": "33"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]
